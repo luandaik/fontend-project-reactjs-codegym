@@ -1,18 +1,28 @@
-import React, { Component, Fragment } from 'react'
-import { Container } from 'react-bootstrap'
+import React, { Component, Fragment } from "react";
+import { Button, Col, Container, Row } from "react-bootstrap";
+import "../../asset/css/custom.css";
+import "../../asset/css/bootstrap.min.css";
 
 class TopBanner extends Component {
   render() {
     return (
-        <Fragment>
-            <Container>
-
-
-                
+      <Fragment>
+        <Container className="topFixedBanner p-0" fluid>
+          <div className="topBannerOverlay">
+            <Container className="topContent" fluid={true}>
+                <Row>
+                    <Col className="text-center">
+                        <h1 className="topTitle">ANIME MANGA</h1>
+                        <h4 className="topSubTitle">Welcome to your comic world</h4>
+                        <Button variant="primary">Read comic</Button>
+                    </Col>
+                </Row>
             </Container>
-        </Fragment>
-    )
+          </div>
+        </Container>
+      </Fragment>
+    );
   }
 }
 
-export default TopBanner
+export default TopBanner;
