@@ -315,7 +315,12 @@ a.comicBuy {
   color: #ffee00;
   font-size: 48px;
 }
-
+.contactSociol {
+  margin: 0 1rem;
+  transition: transform 250ms;
+  display: inline-block;
+  color: #000000;
+}
 
 
 
