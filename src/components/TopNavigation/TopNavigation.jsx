@@ -39,7 +39,7 @@ class TopNavigation extends Component {
         >
           <Container fluid>
             <Navbar.Brand className={this.state.navBarTitle} href="#home">
-              ANIME MANGA
+              COMICSVN
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">

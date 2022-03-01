@@ -12,7 +12,7 @@ class TopBanner extends Component {
             <Container className="topContent" fluid={true}>
                 <Row>
                     <Col className="text-center">
-                        <h1 className="topTitle">ANIME MANGA</h1>
+                        <h1 className="topTitle">COMICSVN 2022</h1>
                         <h4 className="topSubTitle">Welcome to your comic world</h4>
                         <Button variant="primary">Read comic</Button>
                     </Col>
