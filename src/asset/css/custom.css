@@ -258,3 +258,25 @@
 .copyrightSection{
   background-color: rgb(16, 28, 129);
 }
+.topFixedPage {
+  background-image: url("../image/aboutBg.jpg");
+  min-height: 550px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.topPageOverlay {
+  position: absolute;
+  min-height: 550px;
+  width: 100%;
+  background-color: rgb(0, 0, 0, 0.7);
+}
+.topContentPage {
+  margin-top: 10em;
+}
+.topTitlePage{
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: #ffee00;
+  font-size: 48px;
+}
