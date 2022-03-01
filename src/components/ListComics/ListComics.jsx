@@ -82,6 +82,82 @@ class ListComics extends Component {
                 </Col>
               </Row>
             </Col>
+            <Col lg={6} md={12} sm={12} className="p-2">
+              <Row>
+              <Col lg={6} md={6} sm={12}>
+                    <img className="comicImg comicCardImg" src="https://popsimg.akamaized.net/api/v2/containers/file2/cms_topic/thumbnail_title-73a5ea4c49bb-1632451704498-1oZ3TDdX.png?v=0" alt="" />
+                </Col>
+                <Col lg={6} md={6} sm={12}>
+                  <h5 className="text-justify serviceName">Conan</h5>
+                  <p className="text-justify serviceDesc">
+                    Conan là một trong những tựa truyện tranh trinh thám hấp dẫn
+                    và đến nay vẫn luôn lọt top truyện tranh bán chạy nhất tại
+                    Việt Nam. Nhiều fan hâm mộ từng nói rằng đã theo dõi truyện
+                    từ khi còn là một đứa trẻ, đến nay kể cả khi họ đã lớn, đi
+                    làm hay thậm chí là lập gia đình nhưng Conan vẫn chưa hề kết
+                    thúc.
+                  </p>
+                  <a href="#" className="comicBuy">Mua truyện</a>
+                </Col>
+              </Row>
+            </Col>
+            <Col lg={6} md={12} sm={12} className="p-2">
+              <Row>
+              <Col lg={6} md={6} sm={12}>
+                    <img className="comicImg comicCardImg" src="https://popsimg.akamaized.net/api/v2/containers/file2/cms_topic/thumbnail_title-73a5ea4c49bb-1632451704498-1oZ3TDdX.png?v=0" alt="" />
+                </Col>
+                <Col lg={6} md={6} sm={12}>
+                  <h5 className="text-justify serviceName">Conan</h5>
+                  <p className="text-justify serviceDesc">
+                    Conan là một trong những tựa truyện tranh trinh thám hấp dẫn
+                    và đến nay vẫn luôn lọt top truyện tranh bán chạy nhất tại
+                    Việt Nam. Nhiều fan hâm mộ từng nói rằng đã theo dõi truyện
+                    từ khi còn là một đứa trẻ, đến nay kể cả khi họ đã lớn, đi
+                    làm hay thậm chí là lập gia đình nhưng Conan vẫn chưa hề kết
+                    thúc.
+                  </p>
+                  <a href="#" className="comicBuy">Mua truyện</a>
+                </Col>
+              </Row>
+            </Col>
+            <Col lg={6} md={12} sm={12} className="p-2">
+              <Row>
+              <Col lg={6} md={6} sm={12}>
+                    <img className="comicImg comicCardImg" src="https://popsimg.akamaized.net/api/v2/containers/file2/cms_topic/thumbnail_title-73a5ea4c49bb-1632451704498-1oZ3TDdX.png?v=0" alt="" />
+                </Col>
+                <Col lg={6} md={6} sm={12}>
+                  <h5 className="text-justify serviceName">Conan</h5>
+                  <p className="text-justify serviceDesc">
+                    Conan là một trong những tựa truyện tranh trinh thám hấp dẫn
+                    và đến nay vẫn luôn lọt top truyện tranh bán chạy nhất tại
+                    Việt Nam. Nhiều fan hâm mộ từng nói rằng đã theo dõi truyện
+                    từ khi còn là một đứa trẻ, đến nay kể cả khi họ đã lớn, đi
+                    làm hay thậm chí là lập gia đình nhưng Conan vẫn chưa hề kết
+                    thúc.
+                  </p>
+                  <a href="#" className="comicBuy">Mua truyện</a>
+                </Col>
+              </Row>
+            </Col>
+            <Col lg={6} md={12} sm={12} className="p-2">
+              <Row>
+              <Col lg={6} md={6} sm={12}>
+                    <img className="comicImg comicCardImg" src="https://popsimg.akamaized.net/api/v2/containers/file2/cms_topic/thumbnail_title-73a5ea4c49bb-1632451704498-1oZ3TDdX.png?v=0" alt="" />
+                </Col>
+                <Col lg={6} md={6} sm={12}>
+                  <h5 className="text-justify serviceName">Conan</h5>
+                  <p className="text-justify serviceDesc">
+                    Conan là một trong những tựa truyện tranh trinh thám hấp dẫn
+                    và đến nay vẫn luôn lọt top truyện tranh bán chạy nhất tại
+                    Việt Nam. Nhiều fan hâm mộ từng nói rằng đã theo dõi truyện
+                    từ khi còn là một đứa trẻ, đến nay kể cả khi họ đã lớn, đi
+                    làm hay thậm chí là lập gia đình nhưng Conan vẫn chưa hề kết
+                    thúc.
+                  </p>
+                  <a href="#" className="comicBuy">Mua truyện</a>
+                </Col>
+              </Row>
+            </Col>
           </Row>
         </Container>
       </Fragment>

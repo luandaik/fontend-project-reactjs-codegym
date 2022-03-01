@@ -46,12 +46,12 @@ class TopNavigation extends Component {
             <Navbar.Collapse id="responsive-navbar-nav">
               <Nav className="me-auto"></Nav>
               <Nav>
-                <Nav.Link className={this.state.navBarItem} href="#deets">TRANG CHỦ</Nav.Link>
-                <Nav.Link className={this.state.navBarItem} href="#deets">GIỚI THIỆU</Nav.Link>
-                <Nav.Link className={this.state.navBarItem} href="#deets">DỊCH VỤ</Nav.Link>
-                <Nav.Link className={this.state.navBarItem} href="#deets">TRUYỆN TRANH</Nav.Link>
-                <Nav.Link className={this.state.navBarItem} href="#deets">DANH MỤC</Nav.Link>
-                <Nav.Link className={this.state.navBarItem} href="#deets">LIÊN HỆ</Nav.Link>
+                <Nav.Link className={this.state.navBarItem} href="#deets">HOME</Nav.Link>
+                <Nav.Link className={this.state.navBarItem} href="#deets">ABOUT</Nav.Link>
+                {/* <Nav.Link className={this.state.navBarItem} href="#deets">DỊCH VỤ</Nav.Link> */}
+                <Nav.Link className={this.state.navBarItem} href="#deets">LIST COMIC</Nav.Link>
+                {/* <Nav.Link className={this.state.navBarItem} href="#deets">DANH MỤC</Nav.Link> */}
+                <Nav.Link className={this.state.navBarItem} href="#deets">CONTACT</Nav.Link>
               </Nav>
             </Navbar.Collapse>
           </Container>

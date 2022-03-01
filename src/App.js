@@ -1,11 +1,11 @@
-import AboutPage from "./pages/AboutPage";
+import ListComicsPage from "./pages/ListComicsPage";
 
 
 
 function App() {
   return (
     <div>
-        <AboutPage />
+        <ListComicsPage />
     </div>
   );
 }
