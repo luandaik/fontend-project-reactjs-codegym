@@ -140,35 +140,35 @@
   font-weight: 600;
   font-size: 22px;
 }
-.countSection{
-    margin-top: 20% !important;
+.countSection {
+  margin-top: 20% !important;
 }
-.cardTitle{
-    color: #000000;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 700;
-    font-size: 15px;
+.cardTitle {
+  color: #000000;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
 }
-.cardSubTitle{
-    color: #000000;
-    font-family: "Raleway", sans-serif;
-    font-weight: 600;
-    font-size: 14px;
+.cardSubTitle {
+  color: #000000;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
 }
-.workCard{
-    margin-top: 30% !important;
-    padding: 10px;
-    border-radius: 3px;
+.workCard {
+  margin-top: 30% !important;
+  padding: 10px;
+  border-radius: 3px;
 }
-.iconBullent{
-    color: #051b35;
-    font-size: 16px;
+.iconBullent {
+  color: #051b35;
+  font-size: 16px;
 }
-.iconProject{
-    color: #ffffff;
-    font-size: 40px;
+.iconProject {
+  color: #ffffff;
+  font-size: 40px;
 }
-.comicCard{
+.comicCard {
   background: #ffffff;
   width: 22em;
   border-radius: 0.6em;
@@ -177,13 +177,84 @@
   box-shadow: 0 13px 25px -5px;
   transition: all ease 200ms;
 }
-.comicCard:hover{
- transform: scale(1.03);
+.comicCard:hover {
+  transform: scale(1.03);
   box-shadow: 0 13px 30px -5px;
 }
-.comicCardImg{
+.comicCardImg {
   max-height: 200px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+.comicImg {
+  width: 100%;
+}
+.comicBuy {
+  color: #051b35;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  text-decoration: none;
+
+}
+.aboutmeImg{
+  width: 80%;
+  background-color: #051b35;
+  border-radius: 20%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  float: right;
+}
+.aboutMeBody{
+  width: 100%;
+  height: 100%;
+  padding-left: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 3em;
+}
+.aboutMeTitle{
+  color: #051b35;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+}
+.aboutMeContent{
+  color: #051b35;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+}
+.footerSection{
+  margin-top: 5rem;
+  box-shadow: 0 0 8px 0;
+  background-color: #051b35;
+  
+}
+.footerName{
+  color: #ffffff;
+  margin-top: 1rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+}
+.social-container{
+  margin: 30px;
+}
+.social{
+  margin: 0 1rem;
+  transition: transform 250ms;
+  display: inline-block;
+  color: #ffffff;
+
+  
+}
+.social:hover{
+ transform: translate(-2px );
+
+}
+.copyrightSection{
+  background-color: rgb(16, 28, 129);
 }

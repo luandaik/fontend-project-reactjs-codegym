@@ -10,15 +10,16 @@ class TopNavigation extends Component {
           navBarTitle: "navTitle",
           navBg: "navBackground",
           navBarItem:"navItem",
+          navVarial:"dark",
 
       }
   }
   onScroll=()=>{
       if(window.scrollY>100){
-          this.setState({navBarTitle: "navTitleScroll", navBg:"navBackgroundScroll",navBarItem:"navItemScroll"})
+          this.setState({navBarTitle: "navTitleScroll", navBg:"navBackgroundScroll",navBarItem:"navItemScroll",navVarial:"light",})
       }
       if(window.scrollY<100){
-        this.setState({navBarTitle: "navTitle",navBg:"navBackground",navBarItem:"navItem"})
+        this.setState({navBarTitle: "navTitle",navBg:"navBackground",navBarItem:"navItem",navVarial:"dark",})
       }
       console.log(this.state);
 
@@ -35,7 +36,7 @@ class TopNavigation extends Component {
           collapseOnSelect
           expand="lg"
           
-          variant="dark"
+          variant={this.state.navVarial}
         >
           <Container fluid>
             <Navbar.Brand className={this.state.navBarTitle} href="#home">

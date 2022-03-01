@@ -62,6 +62,8 @@ class ComicVnProject extends Component {
                 </Card.Body>
               </Card>
             </Col>
+            
+            
           </Row>
         </Container>
       </Fragment>
