@@ -6,6 +6,7 @@ import TopNavigation from "../components/TopNavigation/TopNavigation";
 
 export class ContactPage extends Component {
   componentDidMount =()=>{
+    window.scroll(0,0);
     window.document.title = "Contact";
   }
   render() {

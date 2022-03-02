@@ -75,17 +75,25 @@
   margin: -1.9rem auto 0;
   margin-bottom: 3rem;
 }
-.navTitle {
+.navTitle a {
   font-family: "Montserrat", sans-serif;
   color: #ffffff;
   font-weight: 700;
   font-size: 30px;
+  text-decoration: none;
 }
-.navTitleScroll {
+.navTitleScroll a {
   font-family: "Montserrat", sans-serif;
   color: #070101 !important;
   font-weight: 700;
   font-size: 30px;
+  text-decoration: none;
+}
+.navTitle a:hover{
+  color: #ffffff;
+}
+.navTitleScroll a:hover{
+  color: #070101 !important;
 }
 .navBackground {
   transition: background-color 400ms linear;
@@ -96,10 +104,11 @@
 }
 .navBackgroundScroll {
   -webkit-transition: background-color 400ms linear;
-  -moz-transition: background-color 400ms linear;
-  -o-transition: background-color 400ms linear;
-  transition: background-color 400ms linear;
-  background-color: #ffffff;
+     -moz-transition: background-color 400ms linear;
+     -o-transition: background-color 400ms linear;
+     transition: background-color 400ms linear;
+     background-color: #ffffff;
+     box-shadow: 0 0 8px 0 rgba(191, 8, 197, 0.3);
 }
 .navItem {
   text-decoration: none !important;
@@ -330,5 +339,50 @@ a.comicBuy {
 .active{
   color: #e4e127;
 }
-
+.comicPaymentText{
+  font-family: 'Montserrat',sans-serif;
+  font-weight: 700;
+  color: #051b35;
+  font-size: 35px;
+}
+.comicPaymentImg{
+  width: 100%;
+}
+.comicPaymentDesc{
+  font-family: 'Montserrat',sans-serif;
+  font-weight: 700;
+  color: #051b35;
+  font-size: 15px;
+}
+.widget_feature {
+  margin-top: 20px;
+  border: 1px solid #cbd6e2;
+}
+.widget_feature ul {
+  padding: 0 25px 20px;
+}
+.widget_feature ul li {
+  color: #051b35;
+  font-size: 16px;
+  margin-bottom: 9px;
+  list-style: none;
+}
+.widget_feature ul li span {
+  font-family: 'Montserrat',sans-serif;
+  font-weight: 700;
+  color: #051b35;
+  margin-right: 5px;
+}
+.widget_feature .price-wrap {
+  background-color: #e90f6a;
+  padding: 34px 23px 40px;
+}
+.widget-title{
+   margin-top: 20px;
+   margin-bottom: 20px;
+   font-family: 'Montserrat',sans-serif;
+   font-weight: 700;
+   font-size: 22px;
+   position: relative;
+}
 

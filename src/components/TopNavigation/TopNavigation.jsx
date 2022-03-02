@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import "../../asset/css/bootstrap.min.css";
 import "../../asset/css/custom.css";
 
@@ -62,7 +62,9 @@ class TopNavigation extends Component {
         >
           <Container fluid>
             <Navbar.Brand className={this.state.navBarTitle} href="/">
+             <Link to="/">
               COMICSVN
+              </Link>
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">

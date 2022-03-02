@@ -2,6 +2,7 @@ import React, { Component, Fragment } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import "../../asset/css/custom.css";
 import "../../asset/css/bootstrap.min.css";
+import { Link } from "react-router-dom";
 
 class Comics extends Component {
   render() {
@@ -26,7 +27,7 @@ class Comics extends Component {
                     làm hay thậm chí là lập gia đình nhưng Conan vẫn chưa hề kết
                     thúc.
                   </p>
-                  <a href="#" className="comicBuy">Mua truyện</a>
+                  <Link to="/payment" className="comicBuy">Mua truyện</Link>
                 </Col>
               </Row>
             </Col>
@@ -40,7 +41,7 @@ class Comics extends Component {
                   <p className="text-justify serviceDesc">
                   Lịch vẫn mang phong cách vô cùng gần gũi và rực rỡ sắc màu, chắc chắn những độc giả yêu mến Doraemon sẽ khó lòng bỏ bỡ, bởi tất cả đều là những tranh màu khổ lớn về khoảnh khắc đẹp của: Doraemon, Nobita và nhóm bạn Suneo, Shizuka, Jaian trong những khung cảnh nổi bật về 4 mùa trong năm và những dịp lễ lớn.
                   </p>
-                  <a href="#" className="comicBuy">Mua truyện</a>
+                  <Link to="/payment" className="comicBuy">Mua truyện</Link>
                 </Col>
               </Row>
             </Col>
@@ -59,7 +60,7 @@ class Comics extends Component {
                     làm hay thậm chí là lập gia đình nhưng Conan vẫn chưa hề kết
                     thúc.
                   </p>
-                  <a href="#" className="comicBuy">Mua truyện</a>
+                  <Link to="/payment" className="comicBuy">Mua truyện</Link>
                 </Col>
               </Row>
             </Col>
@@ -78,7 +79,7 @@ class Comics extends Component {
                     làm hay thậm chí là lập gia đình nhưng Conan vẫn chưa hề kết
                     thúc.
                   </p>
-                  <a href="#" className="comicBuy">Mua truyện</a>
+                  <Link to="/payment" className="comicBuy">Mua truyện</Link>
                 </Col>
               </Row>
             </Col>

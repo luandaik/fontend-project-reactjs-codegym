@@ -12,6 +12,7 @@ import Footer from "../components/Footer/Footer";
 
 class HomePage extends Component {
   componentDidMount =()=>{
+    window.scroll(0,0);
     window.document.title = "Home";
   }
   render() {
@@ -20,7 +21,7 @@ class HomePage extends Component {
         <TopNavigation />
         <TopBanner />
         <Services />
-        <Analysis />
+        {/* <Analysis /> */}
         <Summany />
         <ComicVnProject />
         <Comics />

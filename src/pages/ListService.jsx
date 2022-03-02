@@ -7,6 +7,7 @@ import TopNavigation from "../components/TopNavigation/TopNavigation";
 
 class ListService extends Component {
   componentDidMount =()=>{
+    window.scroll(0,0);
     window.document.title = "Service";
   }
   render() {

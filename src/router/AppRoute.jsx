@@ -5,6 +5,7 @@ import ContactPage from "../pages/ContactPage";
 import HomePage from "../pages/HomePage";
 import ListComicsPage from "../pages/ListComicsPage";
 import ListService from "../pages/ListService";
+import PaymentPage from "../pages/PaymentPage";
 
 export class AppRoute extends Component {
   render() {
@@ -16,6 +17,7 @@ export class AppRoute extends Component {
           <Route exact path="/comics" element={<ListComicsPage/>} ></Route>
           <Route exact path="/contact" element={<ContactPage/>} ></Route>
           <Route exact path="/service" element={<ListService/>} ></Route>
+          <Route exact path="/payment" element={<PaymentPage/>} ></Route>
         </Routes >
       </Fragment>
     );
