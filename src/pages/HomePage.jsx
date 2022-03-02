@@ -20,11 +20,13 @@ class HomePage extends Component {
       <Fragment>
         <TopNavigation />
         <TopBanner />
+        <ComicVnProject />
+        <Comics />
         <Services />
         {/* <Analysis /> */}
         <Summany />
-        <ComicVnProject />
-        <Comics />
+        
+       
         <AboutMe />
         <Footer />
       </Fragment>

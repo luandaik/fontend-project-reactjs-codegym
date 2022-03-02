@@ -12,7 +12,7 @@ class PageTop extends Component {
             <Container className="topContentPage" fluid={true}>
               <Row>
                 <Col className="text-center">
-                  <h1 className="topTitlePage">{this.props.pagetitle}</h1>
+                  
                 
                 </Col>
               </Row>
