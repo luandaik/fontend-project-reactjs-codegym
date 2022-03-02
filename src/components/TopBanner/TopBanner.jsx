@@ -14,7 +14,6 @@ class TopBanner extends Component {
                     <Col className="text-center">
                         <h1 className="topTitle">COMICSVN 2022</h1>
                         <h4 className="topSubTitle">Welcome to your comic world</h4>
-                        <Button variant="primary">Read comic</Button>
                     </Col>
                 </Row>
             </Container>
