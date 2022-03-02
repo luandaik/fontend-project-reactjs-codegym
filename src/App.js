@@ -1,14 +1,13 @@
-import Contact from "./components/Contact/Contact";
-import ContactPage from "./pages/ContactPage";
-import ListComicsPage from "./pages/ListComicsPage";
-
-
+import { Link } from "react-router-dom";
+import HomePage from "./pages/HomePage";
+import { BrowserRouter } from "react-router-dom";
+import AppRoute from "./router/AppRoute";
 
 function App() {
   return (
-    <div>
-       <ContactPage />
-    </div>
+      <BrowserRouter>
+          <AppRoute />
+      </BrowserRouter>
   );
 }
 

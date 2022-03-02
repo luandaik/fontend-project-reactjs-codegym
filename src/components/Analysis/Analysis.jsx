@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import {  ResponsiveContainer,BarChart, Bar ,XAxis } from 'recharts';
-
+import "../../asset/css/bootstrap.min.css"; 
 import "../../asset/css/custom.css";
 
 class Analysis extends Component {

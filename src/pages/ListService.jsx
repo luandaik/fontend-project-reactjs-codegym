@@ -2,22 +2,26 @@ import React, { Component, Fragment } from "react";
 import Contact from "../components/Contact/Contact";
 import Footer from "../components/Footer/Footer";
 import PageTop from "../components/PageTop/PageTop";
+import Services from "../components/Services/Services";
 import TopNavigation from "../components/TopNavigation/TopNavigation";
 
-export class ContactPage extends Component {
+class ListService extends Component {
   componentDidMount =()=>{
-    window.document.title = "Contact";
+    window.document.title = "Service";
   }
   render() {
     return (
       <Fragment>
-        <TopNavigation />
-        <PageTop pagetitle="Liên hệ" />
-        <Contact />
-        <Footer />
+        <Fragment>
+          <TopNavigation />
+          <PageTop pagetitle="Dịch vụ" />
+          <Services />
+          <Contact />
+          <Footer />
+        </Fragment>
       </Fragment>
     );
   }
 }
 
-export default ContactPage;
+export default ListService;

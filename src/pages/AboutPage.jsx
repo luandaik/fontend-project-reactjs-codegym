@@ -6,8 +6,12 @@ import PageTop from "../components/PageTop/PageTop";
 import TopNavigation from "../components/TopNavigation/TopNavigation";
 
 export class AboutPage extends Component {
+  componentDidMount =()=>{
+    window.document.title = "About";
+  }
   render() {
     return (
+      
       <Fragment>
         <TopNavigation />
         <PageTop pagetitle="Giới thiệu" />

@@ -11,6 +11,9 @@ import AboutMe from "../components/AboutMe/AboutMe";
 import Footer from "../components/Footer/Footer";
 
 class HomePage extends Component {
+  componentDidMount =()=>{
+    window.document.title = "Home";
+  }
   render() {
     return (
       <Fragment>

@@ -12,7 +12,7 @@ class Services extends Component {
       <Fragment>
         <Container>
           <h1 className="serviceMainTitle text-center">Dịch vụ</h1>
-          <div className="bottom"></div>
+          <div className="bottom"></div> 
           <Row>
             <Col lg={4} md={6} sm={12}>
               <div className="serviceCard text-center">

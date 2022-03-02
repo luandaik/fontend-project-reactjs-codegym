@@ -1,21 +1,14 @@
-import React, { Component, Fragment } from "react";
-import { Button, Card, Col, Container, Row } from "react-bootstrap";
-import "../../asset/css/custom.css";
-import "../../asset/css/bootstrap.min.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faCertificate,
-  faCheckSquare,
-  faFlag,
-  faHeader,
-  faHeart,
-  faSquareArrowUpRight,
-  faSquareCheck,
-  faStar,
-  faStarAndCrescent,
+  faCertificate, faHeart, faSquareCheck,
+  faStar
 } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import React, { Component, Fragment } from "react";
+import { Card, Col, Container, Row } from "react-bootstrap";
 import CountUp from 'react-countup';
 import ReactVisibilitySensor from "react-visibility-sensor";
+import "../../asset/css/bootstrap.min.css";
+import "../../asset/css/custom.css";
 
 class Summany extends Component {
   render() {
