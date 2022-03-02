@@ -7,10 +7,33 @@ import React, { Component, Fragment } from "react";
 import { Card, Col, Container, Row } from "react-bootstrap";
 import CountUp from 'react-countup';
 import ReactVisibilitySensor from "react-visibility-sensor";
+import AppUrl from '../../API/AppUrl';
+import RestClient from '../../API/RestClient';
 import "../../asset/css/bootstrap.min.css";
 import "../../asset/css/custom.css";
 
 class Summany extends Component {
+  constructor(){
+    super();
+    this.state={
+      total_sell:0,
+      total_conscious:0,
+      total_comic:0,
+    }
+  }
+  componentDidMount(){
+    RestClient.GetRequest(AppUrl.TotalHomeData).then(result=>{
+        this.setState({
+          total_sell: result[0].total_sell,
+          total_conscious: result[0].total_conscious,
+          total_comic: result[0].total_comic,
+        })
+        
+    }).catch(err=>{
+       console.log(err)
+    });
+     
+  }
   render() {
     return (
       <Fragment>
@@ -23,7 +46,7 @@ class Summany extends Component {
                     <Col>
                       <FontAwesomeIcon className="iconProject" icon={faStar} />
                       <h1 className="countNumber">
-                        <CountUp start={0} end={100000}>
+                        <CountUp start={0} end={this.state.total_sell}>
                           {({ countUpRef, start }) => (
                            <ReactVisibilitySensor onChange={start} delayedCall>
                               <span ref={countUpRef} />
@@ -40,7 +63,7 @@ class Summany extends Component {
                     <Col>
                       <FontAwesomeIcon className="iconProject" icon={faHeart} />
                       <h1 className="countNumber">
-                      <CountUp start={0} end={64}>
+                      <CountUp start={0} end={this.state.total_conscious}>
                           {({ countUpRef, start }) => (
                            <ReactVisibilitySensor onChange={start} delayedCall>
                               <span ref={countUpRef} />
@@ -60,7 +83,7 @@ class Summany extends Component {
                         icon={faCertificate}
                       />
                       <h1 className="countNumber">
-                      <CountUp start={0} end={10000}>
+                      <CountUp start={0} end={this.state.total_comic}>
                           {({ countUpRef, start }) => (
                            <ReactVisibilitySensor onChange={start} delayedCall>
                               <span ref={countUpRef} />

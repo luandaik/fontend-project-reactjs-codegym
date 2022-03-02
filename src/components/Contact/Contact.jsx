@@ -1,11 +1,34 @@
+import { faAddressCard, faMailForward, faPhone } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { Component, Fragment } from "react";
 import { Button, Col, Container, Form, Row } from "react-bootstrap";
-import "../../asset/css/custom.css";
+import AppUrl from '../../API/AppUrl';
+import RestClient from '../../API/RestClient';
 import "../../asset/css/bootstrap.min.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faAddressCard, faMailForward, faPhone, faVoicemail } from "@fortawesome/free-solid-svg-icons";
+import "../../asset/css/custom.css";
 
 class Contact extends Component {
+  constructor(){
+    super();
+    this.state={
+      address:"...",
+      email:"...",
+      phone:"...",
+    }
+  }
+  componentDidMount(){
+    RestClient.GetRequest(AppUrl.FooterData).then(result=>{
+        this.setState({
+          address: result[0].address,
+          email: result[0].email,
+          phone: result[0].phone,
+        })
+        
+    }).catch(err=>{
+       console.log(err);
+    });
+     
+  }
   render() {
     return (
       <Fragment>
@@ -16,26 +39,26 @@ class Contact extends Component {
               <Form>
                 <Form.Group>
                   <Form.Label>Họ và tên</Form.Label>
-                  <Form.Control type="text" placeholder="Điền vào tên của bạn" />
+                  <Form.Control id="name" type="text" placeholder="Điền vào tên của bạn" />
                 </Form.Group>
                 <Form.Group>
                   <Form.Label>Địa chỉ email</Form.Label>
-                  <Form.Control type="email" placeholder="Điền vào email của bạn" />
+                  <Form.Control id="email" type="email" placeholder="Điền vào email của bạn" />
                 </Form.Group>
                 <Form.Group>
                   <Form.Label>Tin nhắn</Form.Label>
-                  <Form.Control as="textarea" row={3} placeholder="Điền vào tin nhắn của bạn" />
+                  <Form.Control id="message" as="textarea" row={3} placeholder="Điền vào tin nhắn của bạn" />
                 </Form.Group>
-                <Button className="mt-3" variant="primary" type="submit">
+                <Button onClick={this.sendContact} className="mt-3" variant="primary">
                   Gửi
                 </Button>
               </Form>
             </Col>
             <Col lg={6} md={6} sm={12}>
               <h1 className="serviceName">Thông tin của chúng tôi</h1>
-              <p className="serviceDesc"><FontAwesomeIcon className="contactSociol" icon={faAddressCard} size="1x" /> Địa chỉ: Tổi xxx khu xxx phường xxx</p>
-              <p className="serviceDesc"><FontAwesomeIcon className="contactSociol" icon={faMailForward} size="1x" />Email: xxx@xx.xxx</p>
-              <p className="serviceDesc"><FontAwesomeIcon className="contactSociol" icon={faPhone} size="1x" />Điện thoại: 0123456789</p>
+              <p className="serviceDesc"><FontAwesomeIcon className="contactSociol" icon={faAddressCard} size="1x" /> Địa chỉ: {this.state.address}</p>
+              <p className="serviceDesc"><FontAwesomeIcon className="contactSociol" icon={faMailForward} size="1x" />Email: {this.state.email}</p>
+              <p className="serviceDesc"><FontAwesomeIcon className="contactSociol" icon={faPhone} size="1x" />Điện thoại: {this.state.phone}</p>
             </Col>
           </Row>
         </Container>
