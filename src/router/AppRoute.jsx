@@ -5,6 +5,7 @@ import ContactPage from "../pages/ContactPage";
 import HomePage from "../pages/HomePage";
 import ListComicsPage from "../pages/ListComicsPage";
 import ListService from "../pages/ListService";
+import PageNotFound from "../pages/PageNotFound";
 import PaymentPage from "../pages/PaymentPage";
 
 
@@ -19,6 +20,7 @@ function AppRoute() {
       <Route exact path="/contact" element={<ContactPage/>} ></Route>
       <Route exact path="/service" element={<ListService/>} ></Route>
       <Route exact path="/payment/:comicID/:comicName" element={<PaymentPage/>} ></Route>
+      <Route path="*" element={<PageNotFound/>} ></Route>
     </Routes >
   </Fragment>
   );
