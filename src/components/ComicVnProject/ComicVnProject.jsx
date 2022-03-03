@@ -8,6 +8,7 @@ import { Link } from "react-router-dom";
 import Loading from "../Loading/Loading";
 import Fade from 'react-reveal/Fade';
 import Jump from 'react-reveal/Jump';
+import "../../asset/css/reponsive.css";
 
 class ComicVnProject extends Component {
   constructor() {
