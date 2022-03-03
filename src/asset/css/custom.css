@@ -308,7 +308,7 @@ a.comicBuy {
   transform: translate(-2px);
 }
 .copyrightSection {
-  background-color: rgb(16, 28, 129);
+  background-color: #051b35;
 }
 .topFixedPage {
   background-image: url("../image/aboutBg.jpg");
