@@ -7,21 +7,24 @@ import ListComicsPage from "../pages/ListComicsPage";
 import ListService from "../pages/ListService";
 import PaymentPage from "../pages/PaymentPage";
 
-export class AppRoute extends Component {
-  render() {
-    return (
-      <Fragment>
-        <Routes >
-          <Route exact path="/" element={<HomePage/>}></Route>
-          <Route exact path="/about" element={<AboutPage/>}></Route>
-          <Route exact path="/comics" element={<ListComicsPage/>} ></Route>
-          <Route exact path="/contact" element={<ContactPage/>} ></Route>
-          <Route exact path="/service" element={<ListService/>} ></Route>
-          <Route exact path="/payment" element={<PaymentPage/>} ></Route>
-        </Routes >
-      </Fragment>
-    );
-  }
+
+
+function AppRoute() {
+  return (
+    <Fragment>
+    <Routes >
+      <Route exact path="/" element={<HomePage/>}></Route>
+      <Route exact path="/about" element={<AboutPage/>}></Route>
+      <Route exact path="/comics" element={<ListComicsPage/>} ></Route>
+      <Route exact path="/contact" element={<ContactPage/>} ></Route>
+      <Route exact path="/service" element={<ListService/>} ></Route>
+      <Route exact path="/payment/:comicID/:comicName" element={<PaymentPage/>} ></Route>
+    </Routes >
+  </Fragment>
+  );
 }
 
 export default AppRoute;
+
+
+

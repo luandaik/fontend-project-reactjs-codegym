@@ -11,6 +11,7 @@ import {
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
 import { Link } from "react-router-dom";
+import Loading from "../Loading/Loading";
 
 class Footer extends Component {
   constructor(){
@@ -19,14 +20,17 @@ class Footer extends Component {
       facebook:"",
       youtube:"",
       twitter:"",
+      loading: true,
     }
   }
   componentDidMount(){
+    
     RestClient.GetRequest(AppUrl.FooterData).then(result=>{
         this.setState({
           facebook: result[0].facebook,
           youtube: result[0].twitter,
           twitter: result[0].youtube,
+          loading: false
         })
         
         
@@ -36,7 +40,10 @@ class Footer extends Component {
      
   }
   render() {
-   
+    
+    if (this.state.loading) {
+      return <Loading />;
+    } else {
     return (
       <Fragment>
         <Container fluid className="footerSection">
@@ -69,6 +76,7 @@ class Footer extends Component {
          </Container>
       </Fragment>
     );
+    }
   }
 }
 

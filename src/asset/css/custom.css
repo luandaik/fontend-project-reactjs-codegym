@@ -401,3 +401,7 @@ a.comicBuy {
 .cardUrl:hover{
   color: #13d8d8;
 }
+.loadingAnimation{
+  width: 140px;
+  height: 140px;
+}
